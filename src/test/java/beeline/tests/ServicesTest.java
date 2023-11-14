@@ -4,6 +4,7 @@ import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 
+import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
@@ -11,7 +12,7 @@ import static io.qameta.allure.Allure.step;
 
 @Owner("Anton Melnikov")
 @Feature("Тестирование страницы услуг Билайн")
-@Tag("ui")
+@Tags({@Tag("ui"), @Tag("services")})
 public class ServicesTest extends TestBase {
 
     @ParameterizedTest
