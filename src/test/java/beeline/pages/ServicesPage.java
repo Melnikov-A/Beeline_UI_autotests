@@ -73,12 +73,12 @@ public class ServicesPage {
     }
 
     public ServicesPage clickSbpMethodList() {
-        sbpMethodListContainer.click();
+        sbpMethodListContainer.shouldBe(visible).click();
         return this;
     }
 
     public ServicesPage clickPaymentButton() {
-        paymentButton.click();
+        paymentButton.shouldBe(visible).click();
         return this;
     }
 
@@ -108,7 +108,7 @@ public class ServicesPage {
     }
 
     public ServicesPage enterUserStreet(String value) {
-        streetInput.setValue(value);
+        streetInput.shouldBe(visible).setValue(value);
         adressList
                 .filter(Condition.exactText(value))
                 .first()
@@ -117,7 +117,7 @@ public class ServicesPage {
     }
 
     public ServicesPage enterUserHouse(String value) {
-        houseInput.setValue(value);
+        houseInput.shouldBe(visible).setValue(value);
         adressList
                 .filter(Condition.exactText(value))
                 .first()
@@ -126,7 +126,7 @@ public class ServicesPage {
     }
 
     public ServicesPage enterUserFlat(String value) {
-        flatsInput.setValue(value);
+        flatsInput.shouldBe(visible).setValue(value);
         return this;
     }
 
@@ -136,7 +136,7 @@ public class ServicesPage {
     }
 
     public ServicesPage enterUserPhoneNumber(String value) {
-        phoneNumberInput.setValue(value);
+        phoneNumberInput.shouldBe(visible).setValue(value);
         return this;
     }
 

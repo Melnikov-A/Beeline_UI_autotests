@@ -52,7 +52,6 @@ public class ServicesTest extends TestBase {
     }
 
     @ParameterizedTest
-    @Disabled
     @DisplayName("Тест заполнения форм на подключение домашнего интернета")
     @Story("Проверка заполнения форм подключения домашнего интернета с успешной территориальной возможностью подключения")
     @Severity(SeverityLevel.BLOCKER)
