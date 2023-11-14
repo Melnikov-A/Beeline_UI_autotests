@@ -1,7 +1,6 @@
 package beeline.tests;
 
 import io.qameta.allure.*;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
