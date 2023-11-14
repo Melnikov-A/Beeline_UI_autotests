@@ -64,12 +64,6 @@ task lines_test(type: Test) {
     }
 }
 
-task services_test(type: Test) {
-    useJUnitPlatform {
-        includeTags("services")
-    }
-}
-
 task search_test(type: Test) {
     useJUnitPlatform {
         includeTags("search")

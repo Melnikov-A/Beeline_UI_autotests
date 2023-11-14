@@ -44,7 +44,7 @@
 ## <img src="images/logo/Jenkins.svg" width="50" height="50"/> Сборка в [Jenkins](https://jenkins.autotests.cloud/job/Melnikov_A-Beeline_autotests/)
 
 <p align="center">
-<img src="images/screenshots/JenkinsScreenshot.png" alt="Jenkins Build" width="1000" height="300">
+<img src="images/screenshots/JenkinsScreenshot.png" alt="Jenkins Build" width="1000" height="400">
 </p>
 
 ### Параметры сборки проекта
@@ -62,7 +62,7 @@
 ### Запуск тестов с параметрами в **Jenkins**
 
 <p align="center">
-<img src="images/screenshots/JenkinsLaunch.png" alt="Jenkins Launch" width="1000" height="350">
+<img src="images/screenshots/JenkinsLaunch.png" alt="Jenkins Launch" width="1000" height="400">
 </p>
 
 ---
@@ -102,19 +102,19 @@ flowchart LR
 ### 🖨️ Главная страница отчета
 
 <p align="center">
-<img src="images/screenshots/Allure-report.png" alt="Allure report" width="1000" height="350">
+<img src="images/screenshots/Allure-report.png" alt="Allure report" width="1000" height="400">
 </p>
 
 ### 📄 Тест-кейсы
 
 <p align="center">
-<img src="images/screenshots/Allure-testcase.png" alt="Test Case" width="1000" height="350">
+<img src="images/screenshots/Allure-testcase.png" alt="Test Case" width="1000" height="400">
 </p>
 
 ### 📊  Графики
 
 <p align="center">
-<img src="images/screenshots/Allure-graf1.png" alt="Allure-graph" width="1000" height="350">
+<img src="images/screenshots/Allure-graf1.png" alt="Allure-graph" width="1000" height="400">
 </p>
 
 ---
