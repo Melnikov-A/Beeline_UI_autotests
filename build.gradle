@@ -81,3 +81,13 @@ task subscription_test(type: Test) {
         includeTags("subscription")
     }
 }
+task payment_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("payment")
+    }
+}
+task internetHome_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("internetHome")
+    }
+}

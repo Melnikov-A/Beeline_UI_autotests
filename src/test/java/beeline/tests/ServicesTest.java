@@ -3,7 +3,7 @@ package beeline.tests;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Tags;
+
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
@@ -11,12 +11,13 @@ import static io.qameta.allure.Allure.step;
 
 @Owner("Anton Melnikov")
 @Feature("Тестирование страницы услуг Билайн")
-@Tags({@Tag("ui"), @Tag("services")})
+@Tag("ui")
 public class ServicesTest extends TestBase {
 
     @ParameterizedTest
     @DisplayName("Тест пополнения счетов Билайн ")
     @Story("Тест пополнения номера телефона и личного кабинета Билайн через систему быстрых платежей")
+    @Tag("payment")
     @Severity(SeverityLevel.BLOCKER)
     @ValueSource(strings = {"Телефон", "Интернет"})
     void servicePaymentTest(String serviceType) {
@@ -54,6 +55,7 @@ public class ServicesTest extends TestBase {
     @ParameterizedTest
     @DisplayName("Тест заполнения форм на подключение домашнего интернета")
     @Story("Проверка заполнения форм подключения домашнего интернета с успешной территориальной возможностью подключения")
+    @Tag("internetHome")
     @Severity(SeverityLevel.BLOCKER)
     @ValueSource(strings = {"100mb", "500mb", "600mb"})
     void internetConnectionTest(String rateType) {
