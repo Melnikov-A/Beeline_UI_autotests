@@ -77,6 +77,26 @@
 
 ---
 
+
+### Варианты запуска тестов
+
+Для запуска можно выбрать один из девяти тест-сьютов:
+
+```mermaid
+flowchart LR
+    A[Test Suite] --> B[Все тесты] --> C[test]
+    A[Test Suite] --> D[Билайн Услуги] -->E[payment_test]
+    D-->F[internetHome_test]
+    D-->G[subscription_test]
+    A[Test Suite] -->H[Билайн Магазин] -->I[search_test]
+    H-->J[basket_test]
+    A[Test Suite] -->K[Билайн Бизнес] -->L[language_test]
+    K-->M[files_test]
+    K-->N[lines_test]
+```
+
+---
+
 ## <img src="images/logo/Allure.svg" width="50" height="50"/> [Allure](https://jenkins.autotests.cloud/job/Melnikov_A-Beeline_autotests/61/allure/) отчет
 
 ### 🖨️ Главная страница отчета
