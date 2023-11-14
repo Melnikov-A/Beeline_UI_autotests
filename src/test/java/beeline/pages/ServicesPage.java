@@ -83,12 +83,12 @@ public class ServicesPage {
     }
 
     public ServicesPage verifySbpPayment(String value) {
-        sbpPaymentOutput.shouldHave(text(value));
+        sbpPaymentOutput.shouldBe(visible).shouldHave(text(value));
         return this;
     }
 
     public ServicesPage verifySumOutput(String value) {
-        sumOutput.shouldHave(text(value));
+        sumOutput.shouldBe(visible).shouldHave(text(value));
         return this;
     }
 
