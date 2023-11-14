@@ -15,12 +15,13 @@ public class ServicesPage {
             internetTab = $x("//span[contains(.,'Интернет')]"),
             phoneInput = $("[placeholder='+7 000 000 00 00']"),
             internetAccountInput = $("[placeholder='080 000 00 00']"),
+            scrolltab = $(".KORDRZ > .Ru13oj"),
             sumInput = $("[placeholder='100–15000 ₽ без комиссии']"),
             sbpMethodButton = $(".iOcoc1"),
             sbpMethodListContainer = $(".NGG6H1"),
             paymentButton = $(".aLxInI"),
             sbpPaymentOutput = $(".Rtwc5X"),
-            sumOutput= $(".QzDudi"),
+            sumOutput = $(".QzDudi"),
             internet100mbButton = $("ul.cU9N1v.ZyZmxk li:nth-child(1) button.C98SUL"),
             internet500mbButton = $("ul.cU9N1v.ZyZmxk li:nth-child(2) button.oICgm7"),
             internet600mbButton = $("ul.cU9N1v.ZyZmxk li:nth-child(3) button.kpGzEV"),
@@ -39,6 +40,11 @@ public class ServicesPage {
 
     public ServicesPage openServicesPage() {
         open("/customers/products/");
+        return this;
+    }
+
+    public ServicesPage scrollToMenu() {
+        scrolltab.scrollTo();
         return this;
     }
 
@@ -164,5 +170,4 @@ public class ServicesPage {
         subscriptionOutput.shouldHave(text(value));
         return this;
     }
-
 }

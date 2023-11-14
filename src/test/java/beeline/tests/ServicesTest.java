@@ -38,6 +38,7 @@ public class ServicesTest extends TestBase {
 
         });
         step("Кликаем на способ оплаты и выбираем СБП", () -> {
+            servicesPage.scrollToMenu();
             servicesPage.clickSbpMethod()
                     .clickSbpMethodList();
         });
@@ -58,6 +59,7 @@ public class ServicesTest extends TestBase {
     void internetConnectionTest(String rateType) {
         step("Открываем страницу с услугами", () -> {
             servicesPage.openServicesPage();
+            servicesPage.scrollToMenu();
         });
         step("Кликаем кнопку с указанием скорости интернета" + rateType, () -> {
             switch (rateType) {
