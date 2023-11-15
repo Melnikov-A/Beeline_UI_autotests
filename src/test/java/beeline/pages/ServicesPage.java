@@ -15,7 +15,7 @@ public class ServicesPage {
             internetTab = $x("//span[contains(.,'Интернет')]"),
             phoneInput = $("[placeholder='+7 000 000 00 00']"),
             internetAccountInput = $("[placeholder='080 000 00 00']"),
-            scrolltab = $(".KORDRZ > .Ru13oj"),
+            scrollTabPayment = $(".KORDRZ > .Ru13oj"),
             sumInput = $("[placeholder='100–15000 ₽ без комиссии']"),
             sbpMethodButton = $(".iOcoc1"),
             sbpMethodListContainer = $(".NGG6H1"),
@@ -44,7 +44,7 @@ public class ServicesPage {
     }
 
     public ServicesPage scrollToMenu() {
-        scrolltab.scrollTo();
+        scrollTabPayment.scrollTo();
         return this;
     }
 
