@@ -1,6 +1,6 @@
 # Проект по автоматизации тестирования для компании оператора связи [Билайн](https://www.beeline.ru)
 
-<p align="center"><a href="https://www.beeline.ru"><img src="images/beeline.logo.jpg" align="center" width="500" height="200"  alt="Java"/></a></p>
+<p align="center"><a href="https://www.beeline.ru"><img src="images/beeline.logo.jpg" align="center" width="500" height="150"  alt="Java"/></a></p>
 
 > Билайн - крупнейший оператор, который оказывает услуги сотовой (GSM, UMTS и LTE) и фиксированной связи, проводного (FTTB) и беспроводного (Wi-Fi, «Билайн WiFi») высокоскоростного доступа в Интернет, IP-телевидения.
 

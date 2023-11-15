@@ -39,7 +39,6 @@ public class ServicesTest extends TestBase {
 
         });
         step("Кликаем на способ оплаты и выбираем СБП", () -> {
-            servicesPage.scrollToMenu();
             servicesPage.clickSbpMethod()
                     .clickSbpMethodList();
         });
