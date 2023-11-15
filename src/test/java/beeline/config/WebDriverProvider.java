@@ -1,6 +1,5 @@
 package beeline.config;
 
-import beeline.config.WebConfig;
 import com.codeborne.selenide.Configuration;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
