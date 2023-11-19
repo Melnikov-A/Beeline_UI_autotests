@@ -1,5 +1,6 @@
 package beeline.tests;
 
+import beeline.pages.FilesPage;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -12,6 +13,8 @@ import static io.qameta.allure.Allure.step;
 @Feature("Тестирование загрузки файлов договоров Билайн с проверкой содержимого текста ")
 @Tags({@Tag("ui"), @Tag("files")})
 public class FilesTest extends TestBase {
+
+    FilesPage filesPage = new FilesPage();
 
     @Test
     @DisplayName("Проверка содержимого текста загружаемого файла в формате PDF")

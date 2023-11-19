@@ -1,5 +1,6 @@
 package beeline.tests;
 
+import beeline.pages.ShopSearchPage;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -13,6 +14,8 @@ import static io.qameta.allure.Allure.step;
 @Feature("Тестирование раздела поиска страницы магазина Билайн")
 @Tags({@Tag("ui"), @Tag("search")})
 public class ShopSearchTest extends TestBase {
+
+    ShopSearchPage shopSearchPage = new ShopSearchPage();
 
     @ParameterizedTest
     @DisplayName("Тест поисковой строки магазина")

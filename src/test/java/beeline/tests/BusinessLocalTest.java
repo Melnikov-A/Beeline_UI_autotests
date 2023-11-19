@@ -1,5 +1,6 @@
 package beeline.tests;
 
+import beeline.pages.BusinessLocalPage;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -12,6 +13,8 @@ import static io.qameta.allure.Allure.step;
 @Feature("Тестирование языка текста раздела 'Билайн Бизнес'")
 @Tags({@Tag("ui"), @Tag("language")})
 public class BusinessLocalTest extends TestBase {
+
+    BusinessLocalPage businessLocalPage = new BusinessLocalPage();
 
     @Test
     @DisplayName("Тестирование переключения языка текста")

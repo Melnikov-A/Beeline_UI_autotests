@@ -1,5 +1,7 @@
 package beeline.tests;
 
+import beeline.pages.ServicesPage;
+import beeline.utils.RandomUtils;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -12,6 +14,9 @@ import static io.qameta.allure.Allure.step;
 @Feature("Тестирование подписки на новости Билайн")
 @Tags({@Tag("ui"), @Tag("subscription")})
 public class SubscriptionTest extends TestBase {
+
+    ServicesPage servicesPage = new ServicesPage();
+    RandomUtils randomUtils = new RandomUtils();
 
     @Test
     @DisplayName("Успешная подписка на новости Билайн")

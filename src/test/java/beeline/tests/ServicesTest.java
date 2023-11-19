@@ -1,5 +1,6 @@
 package beeline.tests;
 
+import beeline.pages.ServicesPage;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -13,6 +14,9 @@ import static io.qameta.allure.Allure.step;
 @Feature("Тестирование страницы услуг Билайн")
 @Tag("ui")
 public class ServicesTest extends TestBase {
+
+    ServicesPage servicesPage = new ServicesPage();
+    TestData testData = new TestData();
 
     @ParameterizedTest
     @DisplayName("Тест пополнения счетов Билайн ")

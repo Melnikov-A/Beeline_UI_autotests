@@ -1,5 +1,7 @@
 package beeline.tests;
 
+import beeline.pages.BasketPage;
+import beeline.pages.ProductPage;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -12,6 +14,8 @@ import static io.qameta.allure.Allure.step;
 @Feature("Тестирование содержимого раздела 'Корзина'")
 @Tags({@Tag("ui"), @Tag("basket")})
 public class BasketTest extends TestBase {
+    ProductPage productPage = new ProductPage();
+    BasketPage basketPage = new BasketPage();
 
     @Test
     @DisplayName("Тестирование добавления товара в корзину")

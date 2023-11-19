@@ -16,15 +16,6 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 
 public class TestBase {
-    TestData testData = new TestData();
-    BasketPage basketPage = new BasketPage();
-    BusinessLocalPage businessLocalPage = new BusinessLocalPage();
-    FilesPage filesPage = new FilesPage();
-    MenuPanelPage menuPanelPage = new MenuPanelPage();
-    ProductPage productPage = new ProductPage();
-    ServicesPage servicesPage = new ServicesPage();
-    ShopSearchPage shopSearchPage = new ShopSearchPage();
-    RandomUtils randomUtils = new RandomUtils();
 
     private static WebConfig config;
 

@@ -1,5 +1,6 @@
 package beeline.tests;
 
+import beeline.pages.MenuPanelPage;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -15,6 +16,8 @@ import static io.qameta.allure.Allure.step;
 @Feature("Тестирование раздела меню (строк) страницы Билайн Бизнес ")
 @Tags({@Tag("ui"), @Tag("lines")})
 public class MenuPanelTest extends TestBase {
+
+    MenuPanelPage menuPanelPage = new MenuPanelPage();
 
     @Test
     @DisplayName("Проверка строк в списке в левой части страницы раздела Билайн Бизнес")
