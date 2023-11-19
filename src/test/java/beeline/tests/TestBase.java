@@ -3,8 +3,6 @@ package beeline.tests;
 import beeline.config.WebConfig;
 import beeline.config.WebDriverProvider;
 import beeline.helpers.Attach;
-import beeline.pages.*;
-import beeline.utils.RandomUtils;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.aeonbits.owner.ConfigFactory;
