@@ -1,4 +1,4 @@
-package beeline.pages;
+package beeline.pages.components;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
@@ -9,21 +9,21 @@ import java.util.List;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class MenuPanelPage {
+public class BusinessPageComponent {
 
     private final SelenideElement menuPanel = $(By.cssSelector("ul[data-test-id='menuPanel']"));
 
-    public MenuPanelPage openBusinessMainPage() {
+    public BusinessPageComponent openBusinessMainPage() {
         open("/business/main/");
         return this;
     }
 
-    public MenuPanelPage waitForMenuPanel() {
+    public BusinessPageComponent waitForMenuPanel() {
         menuPanel.shouldBe(Condition.visible);
         return this;
     }
 
-    public MenuPanelPage verifyMenuItems(List<String> expectedItems) {
+    public BusinessPageComponent verifyMenuItems(List<String> expectedItems) {
         for (String expectedItem : expectedItems) {
             SelenideElement listItem = menuPanel.$x(".//li[.//*[contains(text(), '" + expectedItem + "')]]");
             listItem.shouldBe(Condition.visible);
@@ -33,7 +33,7 @@ public class MenuPanelPage {
 
     }
 
-    public MenuPanelPage verifyMenuItemClickable(SelenideElement menuItem) {
+    public BusinessPageComponent verifyMenuItemClickable(SelenideElement menuItem) {
         menuItem.shouldBe(Condition.enabled);
         return this;
     }

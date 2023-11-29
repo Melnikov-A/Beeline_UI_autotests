@@ -13,11 +13,14 @@ import static com.codeborne.selenide.Selenide.open;
 public class FilesPage {
 
   private final SelenideElement
-            contractLinkPdf = $("a[href*='https://static.beeline.ru/upload/images/B2b/help/b2cc-2922-zayavlenie-o-rastorzhenii-dogovora.pdf']"),
-            applicationLinkXls = $("a[href*='https://static.beeline.ru/upload/images/B2b/help/b2cc-2922-prilozhenie-1-k-dopolnitelnomu-soglasheniyu.xls']");
+            contractLinkPdf = $("a[href*='https://static.beeline.ru/upload/images/B2b/help/" +
+          "b2cc-2922-zayavlenie-o-rastorzhenii-dogovora.pdf']"),
+            applicationLinkXls = $("a[href*='https://static.beeline.ru/upload/images/B2b/help/" +
+                    "b2cc-2922-prilozhenie-1-k-dopolnitelnomu-soglasheniyu.xls']");
 
     public FilesPage openFilesPage() {
-        open("/business/help/documents/obrazcy-zayavlenij/zaiavleniia-na-izmenenie-i-rastorzhenie-dogovora/");
+        open("/business/help/documents/obrazcy-zayavlenij/" +
+                "zaiavleniia-na-izmenenie-i-rastorzhenie-dogovora/");
         return this;
     }
 

@@ -101,7 +101,7 @@ gradle clean test
 flowchart LR
     A[Test Suite] --> B[Все тесты] --> C[test]
     A[Test Suite] --> D[Билайн Услуги] -->E[payment_test]
-    D-->F[internetHome_test]
+    D-->F[internethome_test]
     D-->G[subscription_test]
     A[Test Suite] -->H[Билайн Магазин] -->I[search_test]
     H-->J[basket_test]

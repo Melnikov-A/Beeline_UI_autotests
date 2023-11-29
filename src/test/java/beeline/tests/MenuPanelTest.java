@@ -1,6 +1,6 @@
 package beeline.tests;
 
-import beeline.pages.MenuPanelPage;
+import beeline.pages.components.BusinessPageComponent;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -17,7 +17,7 @@ import static io.qameta.allure.Allure.step;
 @Tags({@Tag("ui"), @Tag("lines")})
 public class MenuPanelTest extends TestBase {
 
-    MenuPanelPage menuPanelPage = new MenuPanelPage();
+    BusinessPageComponent businessPageComponent = new BusinessPageComponent();
 
     @Test
     @DisplayName("Проверка строк в списке в левой части страницы раздела Билайн Бизнес")
@@ -26,10 +26,10 @@ public class MenuPanelTest extends TestBase {
     public void menuPanelItemsTest() {
 
         step("Открываем страницу Билайн Бизнес", () -> {
-            menuPanelPage.openBusinessMainPage();
+            businessPageComponent.openBusinessMainPage();
         });
         step("Ожидаем загрузку элемента со списком Билайн Бизнес", () -> {
-            menuPanelPage.waitForMenuPanel();
+            businessPageComponent.waitForMenuPanel();
         });
         step("Проверка наличия каждой строки в списке", () -> {
             List<String> expectedItems = Arrays.asList(
@@ -41,7 +41,7 @@ public class MenuPanelTest extends TestBase {
                     "Технологии Big Data&AI",
                     "Интернет вещей (IoT)"
             );
-            menuPanelPage.verifyMenuItems(expectedItems);
+            businessPageComponent.verifyMenuItems(expectedItems);
         });
     }
 }

@@ -80,8 +80,8 @@ task payment_test(type: Test) {
         includeTags("payment")
     }
 }
-task internetHome_test(type: Test) {
+task internethome_test(type: Test) {
     useJUnitPlatform {
-        includeTags("internetHome")
+        includeTags("internethome")
     }
 }

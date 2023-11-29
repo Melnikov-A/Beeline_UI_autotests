@@ -57,8 +57,9 @@ public class ServicesTest extends TestBase {
 
     @ParameterizedTest
     @DisplayName("Тест заполнения форм на подключение домашнего интернета")
-    @Story("Проверка заполнения форм подключения домашнего интернета с успешной территориальной возможностью подключения")
-    @Tag("internetHome")
+    @Story("Проверка заполнения форм подключения домашнего интернета" +
+            " с успешной территориальной возможностью подключения")
+    @Tag("internethome")
     @Severity(SeverityLevel.BLOCKER)
     @ValueSource(strings = {"100mb", "500mb", "600mb"})
     void internetConnectionTest(String rateType) {
